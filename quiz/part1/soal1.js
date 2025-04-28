@@ -16,10 +16,26 @@
 //tapi tanpa backtick juga ga masalah sih yg penting output sesuai
 
 // algoritma
-//isi algoritma mu disini (AWAS KALO GA DI ISI!!!!)
+//isi algoritma mu disini sequence  (AWAS KALO GA DI ISI!!!!)
 
 
-let nama = "", peran = "";
+let nama = "kiky", peran = "Ksatria";
+
+if (nama === "") {
+    console.log("nama wajib diisi!");
+}else{
+    if(peran === ""){
+        console.log("Pilih Peranmu untuk memulai game");
+    }else if (peran === "Ksatria"){
+        console.log(`halo Ksatria ${nama} , kamu dapat menyerang dengan senjatamu!`);
+    }else if (peran === "Tabib"){
+        console.log(`halo Tabib ${nama} , kamu akan membantu temanmu yang terluka`);
+    }else if (peran === "Penyihir"){
+        console.log(`halo Penyihir ${nama} , ciptakan keajaiban yang membantu kemenanganmu!`);
+    }else {
+        console.log("tapi kayaknya kamu jadi bot aja ya, peran yang kamu pilih ga ada");
+    }
+}
 
 //code disini gunakan console.log untuk outputnya
 // contoh pliss
